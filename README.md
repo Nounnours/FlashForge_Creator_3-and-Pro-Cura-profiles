@@ -5,6 +5,8 @@ This should simply go into appdata/roaming/cura/"version number"/ path
 so in my case : appdata/roaming/cura/5.2/
 
 This is based off a profile created and published by someone else on Thingyverse I simply modified it and made all the extruders/ cooling fan etc controls work in Gcode directly
+Original link there:
+https://www.thingiverse.com/thing:4574596
 
 Note that there's also a very usefull hack (I can't call this a fix) that gets rif of the decimal in temperature settigns ie: 230.0 deg to make it 230 deg
 The issue with the decimal is that most FlashForge printers interpret this as a setpoint of 0deg..which has the effect of turning off your extruder while the printer will try to mover around and extrude filament...
