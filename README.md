@@ -23,8 +23,12 @@ quick fix for the temperature:
 
 I reworked this entire profile to generate near enough the same Gcode as to what comes out of FlashPrint
 
+Note that now all the Fans are controlled properly so when printing with the any nozzle the corresponding cooling fan is controlled :)
+
 This definitely supports independant printing on each extruders (anoyingly extruder 1 is Right and 2 is left on Cura but I might be able to flip this later on)
 It should also work for dual material printing but I haven't tested this yet
+(on this topic I did some digging and the way Flashforge does it makes not much sense as the printer gets 2x the extrusion "demand" but this demand is split 50/50 accross both sides somehow) then they do a lot of non sense to their Gcode to make mirror etc modes work which I can't easily replicate
+I was hoping they would simply flip the controls on the printer and have single Gcode generated just with a flag on top telling the printer to mirror everything on the extruders and it's mostly this but sprinkled with some Flashforge non-sense sadly...!
 
 note that mirrors and clone mode like in flashprint are not working for now since Cura doesn't support any of this yet (maybe in the future who knows?)
 
