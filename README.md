@@ -5,6 +5,7 @@ This should simply go into appdata/roaming/cura/"version number"/ path
 so in my case : appdata/roaming/cura/5.2/
 
 You can easily access the config folder for Cura (Windows or MacOS or whatever Linux distro you like to run) by goin there:
+
 ![image](https://user-images.githubusercontent.com/47520744/229313406-9ebf0347-7140-4b30-9549-6111152149d3.png)
 
 This is based off a profile created and published by someone else on Thingyverse I simply modified it and made all the extruders/ cooling fan etc controls work in Gcode directly
