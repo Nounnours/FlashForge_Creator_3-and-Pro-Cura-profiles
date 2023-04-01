@@ -17,6 +17,7 @@ Anyway this hack from the discussion over there on this cura issue: https://gith
 This @danilocesar hack/fix works for now and is part of this profile so thanks to all the people before me
 
 quick fix for the temperature:
+
 ![image](https://user-images.githubusercontent.com/47520744/229313361-73ddfa17-02cb-413a-be54-a23ff6484981.png)
 
 
