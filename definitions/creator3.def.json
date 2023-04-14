@@ -22,24 +22,24 @@
         "supports_network_connection": true
     },
     "settings": {
-      "single_gcode": {
-        "label": "GCode for single extrusion",
-        "description": "Start GCode to run when doing single extrusion",
-        "type": "str",
-        "settable_per_mesh": false,
-        "settable_per_extruder": false,
-        "settable_per_meshgroup": false,
-        "default_value": "; **** Flashforge Creator 3 PRINTER start.gcode for using left or right extruder ****\nM118 X28.65 Y20.00 Z10.10 T{initial_extruder_nr}\nM140 S{material_bed_temperature} T0 ; set bed temperature\nM104 S{material_print_temperature_layer_0, initial_extruder_nr} T{initial_extruder_nr} ; set left or right extruder temperature\nM107\nG92 E0 ; reset extrusion distance \nG1 F200 E10 ; extrude 10mm of feed stock \nG92 E0 ; reset extrusion distance \nG90\nG1 Z0.500 F840 ; move Z to 0\nM7 T0\nM6 T{initial_extruder_nr} ; wait for temp\nM651 ; chassis fan on\nM106 S{cool_fan_speed} T{initial_extruder_nr} ; set cooling fan speed \n; **** end of start.gcode ****"
-      },
-      "dual_gcode": {
-        "label": "GCode for dual extrusion",
-        "description": "Start GCode to run when doing dual extrusion",
-        "type": "str",
-        "settable_per_mesh": false,
-        "settable_per_extruder": false,
-        "settable_per_meshgroup": false,
-        "default_value": "; **** Flashforge Creator 3 PRINTER start.gcode for dual extrusion only ****\nM118 X41.50 Y30.00 Z11.20 T0 T1\nM140 S{material_bed_temperature} T0 ; set bed temperature\nM104 S{material_print_temperature, 0} T0 ; set right extruder temp\nM104 S{material_print_temperature, 1} T1 ; set left extruder temp\nM107 ; fan off\nG90 ; absolute positioning\nG1 Z0.500 F840\nM7 T0 ; wait for platform\nM6 T0 ; wait for temp\nM6 T1 ; wait for temp\nM108 T0 ; tool change\nT0\nG92 E0 ; reset extrusion distance \nG1 F200 E10 ; feed 10mm of feed stock \nG92 E0 ; reset extrusion distance \nM108 T1 ; tool change\nT1\nG92 E0 ; reset extrusion distance \nG1 F200 E10 ; feed 10mm of feed stock \nG92 E0 ; reset extrusion distance\nM651 ; chassis fan on\nM106 S{cool_fan_speed} T{initial_extruder_nr} ; set cooling fan speed\n; **** end of start.gcode ****"
-      },
+      	"single_gcode": {
+        	"label": "GCode for single extrusion",
+        	"description": "Start GCode to run when doing single extrusion",
+        	"type": "str",
+        	"settable_per_mesh": false,
+        	"settable_per_extruder": false,
+        	"settable_per_meshgroup": false,
+        	"default_value": "; **** Flashforge Creator 3 PRINTER start.gcode for using left or right extruder ****\nM118 X28.65 Y20.00 Z10.10 T{initial_extruder_nr}\nM140 S{material_bed_temperature} T0 ; set bed temperature\nM104 S{material_print_temperature_layer_0, initial_extruder_nr} T{initial_extruder_nr} ; set left or right extruder temperature\nM107\nG92 E0 ; reset extrusion distance \nG1 F200 E10 ; extrude 10mm of feed stock \nG92 E0 ; reset extrusion distance \nG90\nG1 Z0.500 F840 ; move Z to 0\nM7 T0\nM6 T{initial_extruder_nr} ; wait for temp\nM651 ; chassis fan on\nM106 S{cool_fan_speed} T{initial_extruder_nr} ; set cooling fan speed \n; **** end of start.gcode ****"
+      	},
+      	"dual_gcode": {
+        	"label": "GCode for dual extrusion",
+        	"description": "Start GCode to run when doing dual extrusion",
+        	"type": "str",
+        	"settable_per_mesh": false,
+        	"settable_per_extruder": false,
+        	"settable_per_meshgroup": false,
+        	"default_value": "; **** Flashforge Creator 3 PRINTER start.gcode for dual extrusion only ****\nM118 X41.50 Y30.00 Z11.20 T0 T1\nM140 S{material_bed_temperature} T0 ; set bed temperature\nM104 S{material_print_temperature, 0} T0 ; set right extruder temp\nM104 S{material_print_temperature, 1} T1 ; set left extruder temp\nM107 ; fan off\nG90 ; absolute positioning\nG1 Z0.500 F840\nM7 T0 ; wait for platform\nM6 T0 ; wait for temp\nM6 T1 ; wait for temp\nM108 T0 ; tool change\nT0\nG92 E0 ; reset extrusion distance \nG1 F200 E10 ; feed 10mm of feed stock \nG92 E0 ; reset extrusion distance \nM108 T1 ; tool change\nT1\nG92 E0 ; reset extrusion distance \nG1 F200 E10 ; feed 10mm of feed stock \nG92 E0 ; reset extrusion distance\nM651 ; chassis fan on\nM106 S{cool_fan_speed} T{initial_extruder_nr} ; set cooling fan speed\n; **** end of start.gcode ****"
+      	},
 		"single_endcode": {
             "label": "End GCode for single extrusion",
             "description": "Start GCode to run when doing single extrusion",
