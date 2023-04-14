@@ -9,6 +9,11 @@ You can easily access the config folder for Cura (Windows or MacOS or whatever L
 
 ![image](https://user-images.githubusercontent.com/47520744/229313406-9ebf0347-7140-4b30-9549-6111152149d3.png)
 
+Then just paste the folders from the profile like so:
+
+![image](https://user-images.githubusercontent.com/47520744/232001081-94d57cb4-1756-4f27-8230-fbea8df84d82.png)
+
+
 This is based off a profile created and published by someone else on Thingyverse I simply modified it and made all the extruders/ cooling fan etc controls work in Gcode directly
 Original link there:
 https://www.thingiverse.com/thing:4574596
