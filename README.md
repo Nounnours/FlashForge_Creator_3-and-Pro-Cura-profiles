@@ -23,7 +23,11 @@ The issue with the decimal is that most FlashForge printers interpret this as a 
 Anyway this hack from the discussion over there on this cura issue: https://github.com/Ultimaker/Cura/issues/8657
 This @danilocesar hack/fix works for now and is part of this profile so thanks to all the people before me
 
-quick fix for the temperature:
+quick fix for the temperature (thanx to @theRealAJR for adding the bed temp :) :
+```
+search: M(104|140) S(.+)\.0
+replace: M\1 S\2
+```
 
 ![image](https://user-images.githubusercontent.com/47520744/229313361-73ddfa17-02cb-413a-be54-a23ff6484981.png)
 
